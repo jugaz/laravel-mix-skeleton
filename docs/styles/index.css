@@ -1,0 +1,19 @@
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #babbbb47;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

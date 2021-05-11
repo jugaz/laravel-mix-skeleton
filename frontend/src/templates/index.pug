@@ -1,3 +1,44 @@
 extends ./base/base.pug
 block main
     h1 Esqueleto Front End
+    .pasos ### Pasos
+    ul 
+        li 
+            p - En la raíz del proyecto ejecutar el siguiente comando npm install
+        li 
+            p - Para ver demanera local el proyecto ejecutar npm run watch que 
+                | se encuentra en el 
+                a(href="./package.json" target="_blank") package.json 
+        li 
+            p - Para compilar a dev ejecutar npm run dev
+        li 
+            p - Para compilar a produción npm run prod
+
+    ul 
+        li 
+
+            p - Todo es a base de 
+                a(href="https://laravel.com/docs/5.8/mix" target="_blank") laravel-mix 
+                | y la version que uso es V5.8 y de node es v14.16.1.
+
+        li 
+
+            p - Si desean descomentar alguna carpeta o comentarla puede revisar el 
+                a(href="./.gitignore") .gitignore
+        li 
+            p - Les recomiendo que utilizen 
+                a(href="https://github.com/nvm-sh/nvm" target="_blank") nvm
+
+        li 
+            p - Para el server utilize browsersync,acá les dejo las opciones
+                a(href="https://browsersync.io/docs/options" target="_blank") https://browsersync.io/docs/options
+    ul
+        li 
+            p - Si desean agregar alguna carpeta, por ejemplos "frontend/documentos", 
+                | deben agregarlo en el siguiente archivo 
+                a(href="./webpack.mix.js" target="_blank") webpack.mix.js     
+
+
+
+    p 
+        a(href="https://github.com/jugaz" target="_blank") By Jugaz
