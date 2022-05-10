@@ -3,30 +3,31 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "axios": "^0.26.1",
-    "jquery": "^3.6.0",
-    "jquery-lazy": "^1.7.11",
-    "jquery-validation": "^1.19.3",
-    "lazyload": "^2.0.0-rc.2",
-    "sweetalert2": "^10.9.1"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.27.8",
-    "browser-sync-webpack-plugin": "^2.3.0",
-    "cross-env": "^7.0.3",
-    "laravel-mix": "^6.0.43",
-    "resolve-url-loader": "^5.0.0",
-    "sass": "~1.49.9",
-    "sass-loader": "^12.6.0"
-  },
+
   "scripts": {
-    "development": "mix",
+    "dev": "mix",
     "watch": "mix watch",
     "watch-poll": "mix watch -- --watch-options-poll=1000",
     "hot": "mix watch --hot",
-    "production": "mix --production"
+    "prod": "mix --production"
   },
+
+  "dependencies": {
+    "laravel-mix": "^6.0.43"
+
+  },
+  "devDependencies": {
+    "axios": "^0.26.1",
+    "browser-sync": "^2.27.8",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "jquery": "^3.6.0",
+    "jquery-lazy": "^1.7.11",
+    "jquery-validation": "^1.19.3",
+    "laravel-mix-pug-recursive": "^0.3.3-mikemartin",
+    "pug": "^3.0.2",
+    "sass": "~1.49.9"
+  },
+
   "browserslist": [
     "last 2 versions",
     "ie 8",
@@ -36,7 +37,7 @@
     "type": "git",
     "url": "git+https://github.com/jugaz/laravel-mix-skeleton.git"
   },
-  "author": "",
+  "author": "Jesús Ugaz Vegas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jugaz/laravel-mix-skeleton/issues"

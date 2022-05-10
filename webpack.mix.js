@@ -1,7 +1,6 @@
  
 let fs = require('fs');
 let mix = require('laravel-mix');
-mix.pug = require('laravel-mix-pug-recursive');
 
 
 
@@ -14,8 +13,8 @@ function mixMultiple(folder, method, srcExt, outputExt) {
         }
     }
 }
-mixMultiple('./frontend/src/static/styles/', "sass", "scss", "./docs/styles");
-mixMultiple('./frontend/src/static/scripts/', "js", "js", "./docs/scripts");
+mixMultiple('./frontend/src/static/styles/', "sass", "scss", "./styles");
+mixMultiple('./frontend/src/static/scripts/', "js", "js", "./scripts");
 
 
 mix
@@ -23,11 +22,8 @@ mix
         processCssUrls: false
          
     })
-    .pug('./frontend/src/templates/**/*.pug', './docs/',  {
-        excludePath: __dirname+'/frontend/src/templates'
-	})
     .setPublicPath('./docs/')
-    .disableNotifications()
+
 
     .browserSync({
         proxy: false,
@@ -39,3 +35,5 @@ mix
             }
         }
     })
+
+    .disableNotifications()
