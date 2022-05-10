@@ -1,5 +1,5 @@
 {
-  "name": "skeleton-frontend",
+  "name": "laravel-mix-skeleton",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -36,12 +36,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jugaz/profile-card.git"
+    "url": "git+https://github.com/jugaz/laravel-mix-skeleton.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jugaz/profile-card/issues"
+    "url": "https://github.com/jugaz/laravel-mix-skeleton/issues"
   },
-  "homepage": "https://github.com/jugaz/profile-card#readme"
+  "homepage": "https://github.com/jugaz/laravel-mix-skeleton#readme"
 }
