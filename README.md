@@ -1,5 +1,4 @@
-# Skeleton Frontend
-[https://jugaz.github.io/skeleton-frontend/](https://jugaz.github.io/skeleton-frontend/)
+# Laravel Mix Skeleton
 
 ### Pasos
 - En la raíz del proyecto ejecutar el siguiente comando npm install
@@ -14,7 +13,3 @@
 -------------------------------------------------------------------------------------------------
 - Si desean agregar alguna carpeta, por ejemplos "frontend/documentos", deben agregarlo en el siguiente archivo
 [webpack.mix.js](./webpack.mix.js)
-
-
-
-[By Jugaz](https://github.com/jugaz)
