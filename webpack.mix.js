@@ -23,9 +23,6 @@ mix
         processCssUrls: false
          
     })
-    .copyDirectory('./frontend/src/static/svg/', './docs/svg')
-    .copyDirectory('./frontend/src/static/images/', './docs/images')
-    .copyDirectory('./frontend/src/static/fonts/', './docs/fonts')
     .pug('./frontend/src/templates/**/*.pug', './docs/',  {
         excludePath: __dirname+'/frontend/src/templates'
 	})
