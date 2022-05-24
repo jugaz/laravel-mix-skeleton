@@ -1,8 +1,6 @@
 {
   "name": "laravel-mix-skeleton",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
 
   "scripts": {
     "dev": "mix",
@@ -37,7 +35,7 @@
     "type": "git",
     "url": "git+https://github.com/jugaz/laravel-mix-skeleton.git"
   },
-  "author": "Jesús Ugaz Vegas",
+  "author": "Jesús Antonio Ugaz Vegas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jugaz/laravel-mix-skeleton/issues"
