@@ -1,7 +1,6 @@
 {
   "name": "laravel-mix-skeleton",
   "version": "1.0.0",
-
   "scripts": {
     "dev": "mix",
     "watch": "mix watch",
@@ -9,10 +8,8 @@
     "hot": "mix watch --hot",
     "prod": "mix --production"
   },
-
   "dependencies": {
     "laravel-mix": "^6.0.43"
-
   },
   "devDependencies": {
     "axios": "^0.26.1",
@@ -21,11 +18,9 @@
     "jquery": "^3.6.0",
     "jquery-lazy": "^1.7.11",
     "jquery-validation": "^1.19.3",
-    "laravel-mix-pug-recursive": "^0.3.3-mikemartin",
-    "pug": "^3.0.2",
-    "sass": "~1.49.9"
+    "sass": "~1.49.9",
+    "sass-loader": "^12.6.0"
   },
-
   "browserslist": [
     "last 2 versions",
     "ie 8",

@@ -10,6 +10,11 @@ npm install
 npm run dev
 ```
 
+### Watcher
+```
+npm run watch / npm run watch-poll
+```
+
 ### Compiles and minifies for production
 ```
 npm run prod
