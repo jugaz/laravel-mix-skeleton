@@ -9,17 +9,16 @@
     "prod": "mix --production"
   },
   "dependencies": {
-    "laravel-mix": "^6.0.43"
+    "laravel-mix": "^6.0.39",
+    "axios": "^0.27.2",
+    "sweetalert2": "10.12.5",
+    "vue": "^3.2.13",
+    "vuex": "^4.0.0"
   },
   "devDependencies": {
-    "axios": "^0.26.1",
-    "browser-sync": "^2.27.8",
-    "browser-sync-webpack-plugin": "^2.3.0",
-    "jquery": "^3.6.0",
-    "jquery-lazy": "^1.7.11",
-    "jquery-validation": "^1.19.3",
-    "sass": "~1.49.9",
-    "sass-loader": "^12.6.0"
+    "resolve-url-loader": "^5.0.0",
+    "vue-loader": "^16.8.3",
+    "vue-template-compiler": "^2.7.7"
   },
   "browserslist": [
     "last 2 versions",

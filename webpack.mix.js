@@ -1,7 +1,6 @@
  
 let fs = require('fs');
 let mix = require('laravel-mix');
-mix.pug = require('laravel-mix-pug-recursive');
 
 
 
@@ -11,27 +10,33 @@ function mixMultiple  (folder, method, srcExt, outputExt)  {
     for (let i = 0; i < paths.length; i++) {
         if (paths[i].indexOf('.' + srcExt) > 0 && paths[i].charAt(0) !== '_') {
             const file_path = folder + paths[i];
-            mix[method](file_path, outputExt);
+            if(srcExt == "scss") {
+
+                mix[method](file_path, outputExt);
+              }
+            else {
+                mix[method](file_path, outputExt).vue({ version: 3 });
+            }
             
         }
     }
 }
 
-mixMultiple('./frontend/src/static/styles/', "sass", "scss", "./styles");
-mixMultiple('./frontend/src/static/scripts/', "js", "js", "./scripts");
+mixMultiple('./frontend/src/styles/', "sass", "scss", "./styles");
+mixMultiple('./frontend/src/scripts/', "js", "js", "./scripts");
 
 
 mix
     .options({
-        processCssUrls: false
+        terser: {
+            extractComments: false,
+        },
+        // processCssUrls: false
          
     })
    
 
-    .pug('./frontend/src/templates/**/*.pug', './docs/',  {
-        excludePath: __dirname+'/frontend/src/templates'
-	})
-
+   
     .setPublicPath('./docs/')
     
     .browserSync({
