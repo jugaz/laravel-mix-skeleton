@@ -5,18 +5,22 @@
     "dev": "mix",
     "watch": "mix watch",
     "watch-poll": "mix watch -- --watch-options-poll=1000",
-    "hot": "mix watch --hot",
+    "server": "mix watch --hot",
     "prod": "mix --production"
   },
   "dependencies": {
-    "laravel-mix": "^6.0.39",
     "axios": "^0.27.2",
+    "laravel-mix": "^6.0.39",
     "sweetalert2": "10.12.5",
     "vue": "^3.2.13",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "browser-sync-webpack-plugin": "^2.3.0",
     "resolve-url-loader": "^5.0.0",
+    "sass": "^1.53.0",
+    "sass-loader": "^12.1.0",
     "vue-loader": "^16.8.3",
     "vue-template-compiler": "^2.7.7"
   },

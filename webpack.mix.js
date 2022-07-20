@@ -11,7 +11,6 @@ function mixMultiple  (folder, method, srcExt, outputExt)  {
         if (paths[i].indexOf('.' + srcExt) > 0 && paths[i].charAt(0) !== '_') {
             const file_path = folder + paths[i];
             if(srcExt == "scss") {
-
                 mix[method](file_path, outputExt);
               }
             else {
@@ -22,8 +21,8 @@ function mixMultiple  (folder, method, srcExt, outputExt)  {
     }
 }
 
-mixMultiple('./frontend/src/styles/', "sass", "scss", "./styles");
-mixMultiple('./frontend/src/scripts/', "js", "js", "./scripts");
+mixMultiple('./src/styles/', "sass", "scss", "./styles");
+mixMultiple('./src/scripts/', "js", "js", "./scripts");
 
 
 mix
@@ -35,15 +34,16 @@ mix
          
     })
    
-
-   
-    .setPublicPath('./docs/')
+    .setPublicPath("./docs")
+    .setResourceRoot("./docs")
     
     .browserSync({
         proxy: false,
         port:'8080',
+        open: false,
         server: {
-            baseDir: "./docs/",
+            baseDir: "./docs",
+            index: "index.html",
             serveStaticOptions: {
                 extensions: ["html,css"]
             }
