@@ -1,7 +1,6 @@
  
 let fs = require('fs');
 let mix = require('laravel-mix');
-mix.pug = require('laravel-mix-pug-recursive');
 
 
 
@@ -17,8 +16,8 @@ function mixMultiple  (folder, method, srcExt, outputExt)  {
     }
 }
 
-mixMultiple('./frontend/src/static/styles/', "sass", "scss", "./styles");
-mixMultiple('./frontend/src/static/scripts/', "js", "js", "./scripts");
+mixMultiple('./src/styles/', "sass", "scss", "./styles");
+mixMultiple('./src/scripts/', "js", "js", "./scripts");
 
 
 mix
@@ -26,11 +25,6 @@ mix
         processCssUrls: false
          
     })
-   
-
-    .pug('./frontend/src/templates/**/*.pug', './docs/',  {
-        excludePath: __dirname+'/frontend/src/templates'
-	})
 
     .setPublicPath('./docs/')
     
